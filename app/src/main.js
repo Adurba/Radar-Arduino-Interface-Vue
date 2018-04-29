@@ -6,6 +6,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#RadarMain',
-  components: { RadarMain },
+  components: { RadarMain
+  },
   template: '<RadarMain/>'
 })
