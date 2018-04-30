@@ -2,23 +2,33 @@
   <div class="AngleDisplay">
       <div class="row ">
           <div class="col-xl-12">
-            <h2>Dataview</h2>
+            <h2>Angle-Display</h2>
           </div>
         </div>
         <div class="row">
-            <img class="graph" src="../assets/graph.png" alt="">
+            <Chart class="col-xl-12"></Chart>
         </div>
      </div>
 </template>
 
 <script>
+import Chart from './Chart'
+
 export default {
-  name: 'AngleDisplay'
+  name: 'AngleDisplay',
+  components: {
+    Chart
+  }
 }
 </script>
 
 <style scoped>
-* {
-  border: 1px solid red;
+.AngleDisplay {
+  border: 1px solid black;
+  border-radius:2%;
+}
+img {
+  width: 95%;
+  margin: auto;
 }
 </style>
