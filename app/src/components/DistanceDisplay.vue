@@ -5,7 +5,7 @@
             <h2>Distance-Display</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row col-xl-12">
             <Chart class="col-xl-12"></Chart>
         </div>
      </div>
@@ -23,12 +23,5 @@ export default {
 </script>
 
 <style scoped>
-.DistanceDisplay {
-  border: 1px solid black;
-  border-radius:2%;
-}
-img {
-  width: 95%;
-  margin: auto;
-}
+
 </style>

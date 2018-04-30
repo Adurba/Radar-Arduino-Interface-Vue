@@ -35,12 +35,5 @@ export default {
 </script>
 
 <style scoped>
-.DataView {
-  border: 1px solid black;
-  border-radius: 1%;
-}
-.graph {
-  height: 600px;
-  width: 100%;
-}
+
 </style>

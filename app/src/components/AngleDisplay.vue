@@ -23,12 +23,5 @@ export default {
 </script>
 
 <style scoped>
-.AngleDisplay {
-  border: 1px solid black;
-  border-radius:2%;
-}
-img {
-  width: 95%;
-  margin: auto;
-}
+
 </style>
