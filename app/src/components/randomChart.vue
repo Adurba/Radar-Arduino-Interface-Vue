@@ -1,7 +1,6 @@
 <template>
   <div class="small">
     <line-chart :chart-data="datacollection"></line-chart>
-    <button @click="fillData()">Randomize</button>
   </div>
 </template>
 
@@ -18,7 +17,9 @@ export default {
     }
   },
   mounted () {
-    this.fillData()
+    setInterval(() => {
+      this.fillData()
+    }, 50)
   },
   methods: {
     fillData () {
@@ -27,12 +28,12 @@ export default {
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: '#f87979',
+            backgroundColor: 'white',
             data: [this.getRandomInt(), this.getRandomInt()]
           },
           {
             label: 'Data One',
-            backgroundColor: '#f87979',
+            backgroundColor: 'red',
             data: [this.getRandomInt(), this.getRandomInt()]
           }
         ]
