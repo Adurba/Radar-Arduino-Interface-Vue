@@ -13,7 +13,8 @@ export default {
         ],
         datasets: [
           {label: ['Speed', 'Blank'],
-            backgroundColor: ['#123456', '#347698'],
+            backgroundColor: ['#A8201A', '#001427'],
+            borderColor: '#001427',
             data: [Math.random() * 100, Math.random() * 100]
           }
         ]
