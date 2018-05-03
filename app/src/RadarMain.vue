@@ -22,14 +22,12 @@
 <script>
 import DataView from './components/DataView'
 import AngleDisplay from './components/AngleDisplay'
-import DistanceDisplay from './components/DistanceDisplay'
 
 export default {
   name: 'RadarMain',
   components: {
     DataView,
-    AngleDisplay,
-    DistanceDisplay
+    AngleDisplay
   }
 }
 </script>

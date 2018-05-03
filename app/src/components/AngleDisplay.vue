@@ -6,18 +6,18 @@
           </div>
         </div>
         <div class="row">
-            <Chart class="col-xl-12"></Chart>
+            <Doughnut class="col-xl-12"></Doughnut>
         </div>
      </div>
 </template>
 
 <script>
-import Chart from './Chart'
+import Doughnut from './Doughnut'
 
 export default {
   name: 'AngleDisplay',
   components: {
-    Chart
+    Doughnut
   }
 }
 </script>
