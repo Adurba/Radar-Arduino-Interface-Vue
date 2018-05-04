@@ -1,15 +1,22 @@
 <template>
-  <div class="small">
-    <line-chart :chart-data="datacollection"></line-chart>
-  </div>
+<div class="AngleDisplay">
+      <div class="row ">
+          <div class="col-xl-12">
+            <h2>Angle-Display</h2>
+          </div>
+        </div>
+        <div class="row">
+    <RenderD :chart-data="datacollection" class="col-xl-12"></RenderD>
+        </div>
+     </div>
 </template>
 
 <script>
-import LineChart from './LineChart.js'
+import RenderD from './RenderD'
 
 export default {
   components: {
-    LineChart
+    RenderD
   },
   data () {
     return {
@@ -19,21 +26,17 @@ export default {
   mounted () {
     setInterval(() => {
       this.fillData()
-    }, 50)
+    }, 100)
   },
   methods: {
     fillData () {
       this.datacollection = {
-        labels: [this.getRandomInt(), this.getRandomInt()],
+        labels: ['Speed', 'Blank'],
         datasets: [
           {
-            label: 'Data One',
-            backgroundColor: 'white',
-            data: [this.getRandomInt(), this.getRandomInt()]
-          },
-          {
-            label: 'Data One',
-            backgroundColor: 'red',
+            label: ['Speed', 'Blank'],
+            backgroundColor: ['#A8201A', '#001427'],
+            borderColor: '#001427',
             data: [this.getRandomInt(), this.getRandomInt()]
           }
         ]

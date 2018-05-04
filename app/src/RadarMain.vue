@@ -5,31 +5,26 @@
         <h1 class="col-xl-12 text-center">Arduino-Radar Interface</h1>
       </div>
       <div class="row col-xl-12  ">
-        <Data-view class="col-xl-8  rouded"></Data-view>
+        <React class="col-xl-8"></React>
         <div class="col-xl-4 ">
           <div class="row">
-            <Angle-display class="col-xl-12 angle-display"></Angle-display>
+            <ReactD class="col-xl-12 angle-display"></ReactD>
           </div>
         </div>
       </div>
      </div>
-     <random-chart></random-chart>
   </div>
 </template>
 
 <script>
-import DataView from './components/DataView'
-import AngleDisplay from './components/AngleDisplay'
 import React from './components/React'
-import randomChart from './components/randomChart'
+import ReactD from './components/ReactD'
 
 export default {
   name: 'RadarMain',
   components: {
-    DataView,
-    AngleDisplay,
     React,
-    randomChart
+    ReactD
   }
 }
 </script>
@@ -42,13 +37,6 @@ h1 {
   margin-top: 50px;
   display: block;
 }
-.title {
-padding-bottom: 150px;
-}
-.bord{
-  border: 4px solid #028090;
-  border-radius: 5px;
-}
 @media screen and (max-width:1200px) {
   .angle-display {
     display: none;
@@ -59,5 +47,4 @@ padding-bottom: 150px;
     padding-bottom:50px;
   }
 }
-
 </style>
