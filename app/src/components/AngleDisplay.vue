@@ -1,5 +1,8 @@
 <template>
-    <MixinAngleDisplay :chart-data="datacollection" class="col-xl-12"></MixinAngleDisplay>
+<div>
+  <h2>Angle-Display</h2>
+    <MixinAngleDisplay :chart-data="datacollection"></MixinAngleDisplay>
+</div>
 </template>
 
 <script>
@@ -41,5 +44,7 @@ export default {
 </script>
 
 <style>
-
+h2 {
+  margin: 40px;
+}
 </style>

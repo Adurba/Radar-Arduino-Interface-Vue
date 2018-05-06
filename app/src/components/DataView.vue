@@ -1,5 +1,8 @@
 <template>
-   <MixinDataView :chart-data="datacollection"></MixinDataView>
+<div>
+  <h2>Data-View</h2>
+  <MixinDataView :chart-data="datacollection" class="render"></MixinDataView>
+</div>
 </template>
 
 <script>
@@ -41,8 +44,7 @@ export default {
 </script>
 
 <style>
-.small {
-  max-width: 600px;
-  margin: 150px auto;
+#line-chart{
+  height: 600px !important;
 }
 </style>

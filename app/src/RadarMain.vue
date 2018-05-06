@@ -1,39 +1,64 @@
 <template>
   <div id="RadarMain">
-    <DataView class="col-xl-8"></DataView>
-    <AngleDisplay class="col-xl-12 angle-display"></AngleDisplay>
+    <div class="container-fluid">
+      <div class="row">
+         <h2 class="title">Radar-Arduino-Interface</h2>
+      </div>
+      <div class="row">
+       <button type="button" class="btn btn2 btn-info btn-lg" data-toggle="modal" data-target="#myModal">INFO</button>
+      </div>
+      <div class="row col-xl-12">
+        <DataView class="col-xl-8 dataview"></DataView>
+        <AngleDisplay class="col-xl-4 "></AngleDisplay>
+      </div>
+    </div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ratione molestiae corporis? Blanditiis labore odio voluptate fugit officia, eligendi corporis quas rem ut fugiat itaque debitis asperiores! Quia, suscipit ipsam.</p>
+      </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
   </div>
 </template>
 
 <script>
-import DataView from "./components/DataView";
-import AngleDisplay from "./components/AngleDisplay";
+import DataView from './components/DataView'
+import AngleDisplay from './components/AngleDisplay'
 
 export default {
-  name: "RadarMain",
+  name: 'RadarMain',
   components: {
     DataView,
     AngleDisplay
   }
-};
+}
 </script>
 <style>
 body {
   background-color: #001427;
-  color: #fdffff;
+  color: #FDFFFF;
 }
-h1 {
-  margin-top: 50px;
-  display: block;
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin: 60px;
 }
-@media screen and (max-width: 1200px) {
-  .angle-display {
-    display: none;
-  }
+.title, .btn2 {
+
+  margin: 20px auto;
 }
-@media screen and (max-width: 550px) {
-  .title {
-    padding-bottom: 50px;
-  }
+
+h1, h2 {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.info {
+  color: black;
+  text-align: center;
 }
 </style>
