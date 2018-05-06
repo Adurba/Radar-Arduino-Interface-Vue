@@ -6,17 +6,17 @@
           </div>
         </div>
         <div class="row">
-    <RenderD :chart-data="datacollection" class="col-xl-12"></RenderD>
+    <MixinAngleDisplay :chart-data="datacollection" class="col-xl-12"></MixinAngleDisplay>
         </div>
      </div>
 </template>
 
 <script>
-import RenderD from './RenderD'
+import MixinAngleDisplay from '../mixins/MixinAngleDisplay'
 
 export default {
   components: {
-    RenderD
+    MixinAngleDisplay
   },
   data () {
     return {
@@ -50,8 +50,5 @@ export default {
 </script>
 
 <style>
-.small {
-  max-width: 600px;
-  margin: 150px auto;
-}
+
 </style>

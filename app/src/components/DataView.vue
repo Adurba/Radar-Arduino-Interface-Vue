@@ -4,18 +4,18 @@
           <div class="col-xl-12 label">
             <h2>Radar-Graph</h2>
           </div>
-    <Render :chart-data="datacollection"></Render>
    </div>
+   <MixinDataView :chart-data="datacollection"></MixinDataView>
   </div>
 </template>
 
 <script>
-import Render from './Render'
+import MixinDataView from '../mixins/MixinDataView'
 
 export default {
   name: 'React',
   components: {
-    Render
+    MixinDataView
   },
   data () {
     return {

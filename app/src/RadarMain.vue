@@ -5,10 +5,10 @@
         <h1 class="col-xl-12 text-center">Arduino-Radar Interface</h1>
       </div>
       <div class="row col-xl-12  ">
-        <React class="col-xl-8"></React>
+        <DataView class="col-xl-8"></DataView>
         <div class="col-xl-4 ">
           <div class="row">
-            <ReactD class="col-xl-12 angle-display"></ReactD>
+            <AngleDisplay class="col-xl-12 angle-display"></AngleDisplay>
           </div>
         </div>
       </div>
@@ -17,14 +17,14 @@
 </template>
 
 <script>
-import React from './components/React'
-import ReactD from './components/ReactD'
+import DataView from './components/DataView'
+import AngleDisplay from './components/AngleDisplay'
 
 export default {
   name: 'RadarMain',
   components: {
-    React,
-    ReactD
+    DataView,
+    AngleDisplay
   }
 }
 </script>
