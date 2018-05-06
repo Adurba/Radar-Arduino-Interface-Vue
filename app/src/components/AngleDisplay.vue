@@ -1,14 +1,5 @@
 <template>
-<div class="AngleDisplay">
-      <div class="row ">
-          <div class="col-xl-12">
-            <h2>Angle-Display</h2>
-          </div>
-        </div>
-        <div class="row">
     <MixinAngleDisplay :chart-data="datacollection" class="col-xl-12"></MixinAngleDisplay>
-        </div>
-     </div>
 </template>
 
 <script>

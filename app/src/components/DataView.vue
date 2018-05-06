@@ -1,12 +1,5 @@
 <template>
-  <div class="small">
-    <div class="row ">
-          <div class="col-xl-12 label">
-            <h2>Radar-Graph</h2>
-          </div>
-   </div>
    <MixinDataView :chart-data="datacollection"></MixinDataView>
-  </div>
 </template>
 
 <script>
