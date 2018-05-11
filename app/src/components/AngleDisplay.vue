@@ -8,7 +8,6 @@
 <script>
 import MixinAngleDisplay from '../mixins/MixinAngleDisplay'
 import axios from 'axios'
-var x = 5
 export default {
   components: {
     MixinAngleDisplay
@@ -36,7 +35,7 @@ export default {
             label: ['Angle', 'Blank'],
             backgroundColor: ['#A8201A', '#001427'],
             borderColor: '#001427',
-            data: [this.x,180-this.x]
+            data: [this.x, 180 - this.x]
           }
         ]
       }

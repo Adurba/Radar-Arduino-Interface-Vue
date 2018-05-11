@@ -9,7 +9,6 @@
       </div>
       <div class="row col-xl-12">
         <DataView class="col-xl-8 dataview"></DataView>
-        <AngleDisplay class="col-xl-4 "></AngleDisplay>
       </div>
     </div>
 <div id="myModal" class="modal fade" role="dialog">
@@ -50,6 +49,14 @@ body {
 .title, .btn2 {
 
   margin: 20px auto;
+}
+.dataview {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin: auto;
 }
 
 h1, h2 {
