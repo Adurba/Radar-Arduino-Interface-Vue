@@ -8,7 +8,8 @@
        <button type="button" class="btn btn2 btn-info btn-lg" data-toggle="modal" data-target="#myModal">INFO</button>
       </div>
       <div class="row col-xl-12">
-        <DataView class="col-xl-8 dataview"></DataView>
+        <DistanceDisplay class="col-xl-6"></DistanceDisplay>
+        <AngleDisplay class="col-xl-6"></AngleDisplay>
       </div>
     </div>
 <div id="myModal" class="modal fade" role="dialog">
@@ -25,14 +26,14 @@
 </template>
 
 <script>
-import DataView from './components/DataView'
 import AngleDisplay from './components/AngleDisplay'
+import DistanceDisplay from './components/DistanceDisplay'
 
 export default {
   name: 'RadarMain',
   components: {
-    DataView,
-    AngleDisplay
+    AngleDisplay,
+    DistanceDisplay
   }
 }
 </script>

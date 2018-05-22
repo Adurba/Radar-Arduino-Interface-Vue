@@ -1,8 +1,8 @@
 <script>
-import { PolarArea, mixins } from 'vue-chartjs'
+import { Doughnut, mixins } from 'vue-chartjs'
 const { reactiveProp } = mixins
 export default {
-  extends: PolarArea,
+  extends: Doughnut,
   mixins: [reactiveProp],
   props: ['options'],
   mounted () {
