@@ -46,7 +46,7 @@ export default {
     getData () {
       axios.get('http://localhost:3003')
         .then(res => {
-          this.x = res.data
+          this.x = res.data.tempA
         })
     }
   }
@@ -54,7 +54,21 @@ export default {
 </script>
 
 <style>
+ #doughnut-chart{
+  height: 500px !important;
+  width: 500px !important;
+}
+
+ .ri #doughnut-chart{
+  height: 500px !important;
+  width: 500px !important;
+  float: right;
+}
+
 h2 {
   margin: 40px;
+}
+.ri h2 {
+  text-align: right
 }
 </style>

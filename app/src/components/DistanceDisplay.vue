@@ -20,10 +20,10 @@ export default {
   mounted () {
     setInterval(() => {
       this.fillData()
-    }, 100)
+    }, 10)
     setInterval(() => {
       this.getData()
-    }, 100)
+    }, 10)
   },
 
   methods: {
@@ -33,7 +33,7 @@ export default {
         datasets: [
           {
             label: ['Distance', 'Blank'],
-            backgroundColor: ['#A8201A', '#001427'],
+            backgroundColor: ['#58D68D', '#001427'],
             borderColor: '#001427',
             data: [this.x, 180 - this.x]
           }
@@ -46,7 +46,7 @@ export default {
     getData () {
       axios.get('http://localhost:3003')
         .then(res => {
-          this.x = res.data
+          this.x = res.data.tempD
         })
     }
   }
@@ -57,4 +57,5 @@ export default {
 h2 {
   margin: 40px;
 }
+
 </style>

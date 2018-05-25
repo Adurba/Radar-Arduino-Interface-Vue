@@ -1,6 +1,6 @@
 <template>
   <div id="RadarMain">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
          <h2 class="title">Radar-Arduino-Interface</h2>
       </div>
@@ -9,7 +9,7 @@
       </div>
       <div class="row col-xl-12">
         <DistanceDisplay class="col-xl-6"></DistanceDisplay>
-        <AngleDisplay class="col-xl-6"></AngleDisplay>
+        <AngleDisplay class="col-xl-6 ri"></AngleDisplay>
       </div>
     </div>
 <div id="myModal" class="modal fade" role="dialog">

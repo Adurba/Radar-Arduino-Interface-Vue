@@ -4,8 +4,7 @@ const http = require('http')
 
 const app = express()
 const server = http.createServer(app)
-const port = 3003
-
+const port = 3000
 
 server.listen(port, function () {
   console.log(`El servidor esta arrancado en el puerto ${port}`)
@@ -13,14 +12,16 @@ server.listen(port, function () {
 
 app.get('/', (req, res) => {
   res.header('Access-Control-Allow-Origin', '*')
-  res.send(tempA)
+  res.send({
+    tempA,
+    tempD
+  })
 })
-
 
 const SerialPort = require('serialport')
 const Readline = SerialPort.parsers.Readline
 
- const mySerial = new SerialPort('/dev/ttyUSB0', {
+const mySerial = new SerialPort('/dev/ttyACM1', {
 
   baudRate: 9600
 })
@@ -38,4 +39,3 @@ parser.on('data', function (data) {
   console.log('Angule:' + tempA)
   console.log('Distance:' + tempD)
 })
-
